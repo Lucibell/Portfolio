@@ -3,6 +3,7 @@ import Aboutme from "./Components/Aboutme"
 import Projects from "./Components/Projects"
 import Contact  from"./Components/Contact"
 import Navbar from "./Components/Navbar"
+import Turnon from "./Components/Turnon"
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import './App.css';
 
@@ -18,6 +19,7 @@ function App() {
       <Route path="/aboutme" element = {<Aboutme/>}/>
       <Route path="/projects" element = {<Projects/>}/>
       <Route path="/contact" element = {<Contact/>}/>
+      <Route path="/projects/1" element = {<Turnon/>}/>
       </Routes>
     </div>
     </BrowserRouter>

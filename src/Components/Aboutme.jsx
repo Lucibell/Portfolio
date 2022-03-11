@@ -24,17 +24,17 @@ function Aboutme() {
   const P = styled.p `
   color: white;
   text-align: left;
-  margin-bottom: 300px;
+  margin-bottom: 250px;
   font-size: 20px;
   font-family: 'Montserrat';
-  margin-left: 25px;
+  margin-left: -10px;
 `
   const H1 = styled.h1 `
   color: white;
   position: center;
   font-family: 'Montserrat';
   text-align:left;  
-  margin-left: 25px;
+  margin-left: 65px;
   margin-top:50px;
   `
   const H2 = styled.h2 `
@@ -45,8 +45,8 @@ function Aboutme() {
   margin-bottom: 30px;
 `
   const IMG = styled.img `
-  width:"200" ;
-  height:"200";
+  width:"150" ;
+  height:"150";
   z-index:2;
 `
 
