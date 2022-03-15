@@ -102,10 +102,6 @@ const Span = styled.span `
 }
 `
  
-
-
-
-
 function Home() {
   return (
     <header classname="header content">
@@ -133,7 +129,7 @@ function Home() {
       <H4></H4>
       <Link to = "/aboutme" >
             <Boton>Portfolio</Boton>
-            </Link>
+      </Link>
       </DivContenido>
      
      

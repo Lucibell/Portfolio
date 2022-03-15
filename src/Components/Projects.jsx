@@ -9,7 +9,7 @@ import cotizador from '../assets/cotizador.png'
 
 const Div = styled.div `
   background-image: url(${fondo});
-  background-size:cover;
+  background-size:100%;
   position:absolute;
   /* top:0;
   bottom:0;
@@ -32,20 +32,15 @@ const Div2= styled.div `
 
 
   h2 {
-    
     margin-top: 140px;
     font-size: 30px;
-    
-    
   }
 
-  p {
-  
+  p {  
     font-size: 25px;
     margin-top: -60px;
     margin-right:10px;
   }
-
 
 `
 const Div3= styled.div `
