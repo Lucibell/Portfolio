@@ -1,7 +1,62 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import {Link} from 'react-router-dom'
+import { IntlProvider, FormattedMessage } from 'react-intl'
 import styled from 'styled-components'
 import backvideo from '../assets/video2.mp4'
+import EnglishMessages from '../languages/en-US.json'
+import SpanishMessages from '../languages/es-AR.json'
+import { langContext } from '../context/langContext'
+
+
+ 
+function Home() {
+  const languages = useContext(langContext)
+  console.log(languages)
+
+  return (
+    <IntlProvider locale="es-AR" messages={{SpanishMessages}}>
+    <header classname="header content">
+      <div classname="header-video">  
+      <Video autoPlay loop muted>
+        <source src={backvideo} type='video/mp4' />
+      </Video>  
+      </div>
+   
+      <DivContenido>
+      <H1>
+        Luciana Belleggia
+      </H1>
+      <Div1>
+        <Span>
+          <FormattedMessage
+            id="home.career" 
+            defaultMessage="Bioengineer"
+          />
+        </Span>
+        <Span>Full Stack Developer</Span>
+        <Span>FrontEnd Developer</Span>
+        <Span>BackEnd Developer</Span>
+      </Div1>
+
+
+      {/* <H2>
+        FullStack Developer
+      </H2> */}
+      <H4></H4>
+      <Link to = "/aboutme" >
+            <Boton>Portfolio</Boton>
+      </Link>
+      </DivContenido>
+     
+     
+    </header>
+    </IntlProvider>
+   
+  )
+}
+
+
+export default Home
 
 const Video = styled.video `
  position:absolute; 
@@ -101,45 +156,3 @@ const Span = styled.span `
   100% {transform: translateY(-312%);}
 }
 `
- 
-function Home() {
-  return (
-    <header classname="header content">
-      <div classname="header-video">  
-      <Video autoPlay loop muted>
-        <source src={backvideo} type='video/mp4' />
-      </Video>  
-      </div>
-   
-      <DivContenido>
-      <H1>
-        Luciana Belleggia
-      </H1>
-      <Div1>
-        <Span>Bioingeniera</Span>
-        <Span>Full Stack Developer</Span>
-        <Span>FrontEnd Developer</Span>
-        <Span>BackEnd Developer</Span>
-      </Div1>
-
-
-      {/* <H2>
-        FullStack Developer
-      </H2> */}
-      <H4></H4>
-      <Link to = "/aboutme" >
-            <Boton>Portfolio</Boton>
-      </Link>
-      </DivContenido>
-     
-     
-    </header>
-   
-  )
-}
-
-
-
-
-
-export default Home

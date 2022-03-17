@@ -1,0 +1,20 @@
+{
+    "home.career": "Bioingeniera",
+    "nav.home":"Inicio",
+    "nav.aboutme":"Sobre mi",
+    "nav.projects":"Proyectos",
+    "nav.contact":"Contacto",
+    "aboutme.h1":"Hola",
+    "aboutme.me":"Soy Luciana, desarrolladora Full Stack y Bioingeniera. Apasionada por aprender, me uno a este mundo IT, sin fronteras para crecer. Encuentro en este mundo la posibilidad de crear soluciones a todo tipo de problemas.Me gusta compartir equipos de trabajo y las dinamicas ágiles. En mi tiempo libre me gusta leer, nadar, disfrutar de mi familia y viajaaar",
+    "projects.turnon":"Desarrollo de una SPA (Single Page Application) y APP mobile para la reserva de turnos de canchas deportivas",
+    "projects.doguiapp":"Desarrollo de una SPA (Single Page Application) que muestras caracteristicas de razas de perros y otras funcionalidades",
+    "projects.titcripto":"Cotizador de criptomonedas",
+    "projects.crypto":"Desarrollo de una SPA que cotiza diversas criptomonedas en tiempo real",
+    "projects.titimages":"Buscador de imágenes",
+    "projects.images":"Desarrollo de una SPA que busca imagenes de Pixabay",
+    "turnon.info":"<p>Desarrollo de una aplicación móvil para la reserva de canchas deportivas.Desarrollo de una SPA para el registro de los centro deportivos que incluye la creación de canchas, gestión de turnos e historial de reservas. Desarrollo de una SPA con la función de administrador con acceso a todas las funcionalidades de los usuarios y proveedores.<br/><u>Mi Contribución:</u> <br/> BackEnd: Configuración inicial de Express - Armado de modelos de la base de datos y sus relaciones - Controladores y rutas. <br/> FrontEnd: Uso de la librería de material table para el armado del SPA del administrador y aplicación de CSS en la Web Page. <br/> <u> Tecnologías utilizadas:</u> React - React Native - Redux - Node Js - Express - PostgreSQL. - CSS. <br/> <u>Metodologías ágiles aplicada:</u> Scrum <br/>",
+    "dogui.info":"<p>Desarrollo de una SPA (Single Page Application) utilizando React para el FrontEnd y Redux como gestor de estados.<br/> Se utilizó CSS puro sin librerías externas para estilizar los componentes de React.La SPA trae la información desde una API de razas de perros a través de un BackEnd desarrollado en NodeJs usando Express.<br/> Determinada información fue guardada en una base de datos relacional usando PostgresSQL-PgAdmin y Sequelize. <br/> <br/><u>Principales funciones:</u> Barra de navegación, búsqueda de una raza de perro en particular, filtros, ordenamiento y un formulario controlado para la creación de una nueva raza de perro.</p> ",
+    "cripto.info":"<p>Desarrollo de una SPA (Single Page Application) utilizando React para el FrontEnd.<br/> La SPA consume la información desde una API con valores de criptomonedas a valor actual a través de Axios.<br/> Se crearon Hooks propios. <br/><br/> <u>Principal función:</u> Cotizar en la moneda a seleccionar una lista de criptomonedas. <br/>Brinda información del precio mas alto del día, el precio mas bajo,la variacion y la última actualización.",
+    "image.info":"<p>Desarrollo de una SPA (Single Page Application) utilizando React para el FrontEnd.<br/>La SPA consume la información desde la API de Pixabay.<br/><br/> <u>Principal función:</u> Búsqueda de imágenes y visualización en calidad máxima de las mismas.<br/> Muestra los Me gusta y la cantidad de visualizaciones.",
+    "contact.title":"Contactame"
+}

@@ -9,17 +9,17 @@ import styled from 'styled-components'
 import image from '../assets/imagen.jpg'
 import fondo from '../assets/fondis2.jpg'
 
-function Aboutme() {
 
-  const Div = styled.div `
+const Div = styled.div `
   background-image: url(${fondo});
   background-size:cover;
   position:absolute;
-  /* top:0;
-  bottom:0;
+  top:0;
+  /* bottom:0;
   left:0;
   right:0; */
   z-index:-10; 
+  
 `
   const P = styled.p `
   color: white;
@@ -28,6 +28,7 @@ function Aboutme() {
   font-size: 20px;
   font-family: 'Montserrat';
   margin-left: -10px;
+  margin-top:50px;
 `
   const H1 = styled.h1 `
   color: white;
@@ -35,7 +36,7 @@ function Aboutme() {
   font-family: 'Montserrat';
   text-align:left;  
   margin-left: 65px;
-  margin-top:50px;
+  margin-top:100px;
   `
   const H2 = styled.h2 `
   color: white;
@@ -60,8 +61,9 @@ const Ic = styled.img `
 `
 
 
+function Aboutme() {
 
-
+  
   return (
     <Div>
        <H1>Hola!</H1> 

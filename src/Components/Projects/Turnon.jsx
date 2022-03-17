@@ -60,7 +60,6 @@ function Turnon() {
             creación de canchas, gestión de turnos e historial de reservas. Desarrollo de una
             SPA con la función de administrador con acceso a todas las funcionalidades de los
             usuarios y proveedores.<br/>
-            
             <u>Mi Contribución:</u> <br/>
             BackEnd: Configuración inicial de Express - Armado de modelos de
             la base de datos y sus relaciones - Controladores y rutas. <br/>

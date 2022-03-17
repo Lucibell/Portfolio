@@ -16,12 +16,19 @@ function App() {
     <div className="App">
       <Routes>
       <Route path="/*" element = {<Navbar/>}/>
+      {/* <Route path="/projects" element = {<Navbar/>}/>
+      <Route path="/contact" element = {<Navbar/>}/>
+      <Route path="/projects/1" element = {<Navbar/>}/>
+      <Route path="/projects/2" element = {<Navbar/>} />
+      <Route path="/projects/3" element = {<Navbar/>} />
+      <Route path="/projects/4" element = {<Navbar/>} /> */}
+      
       </Routes>
       <Routes>
       <Route path="/" element = {<Home/>}/>
       <Route path="/aboutme" element = {<Aboutme/>}/>
       <Route path="/projects" element = {<Projects/>}/>
-      <Route path="/contact" element = {<Contact/>}/>
+      <Route path="/contact" element = {<Contact/>} />
       <Route path="/projects/1" element = {<Turnon/>}/>
       <Route path="/projects/2" element = {<Dogui/>} />
       <Route path="/projects/3" element = {<Cripto/>} />

@@ -4,6 +4,10 @@ import img3 from '../assets/turnon/img3.png'
 import img4 from '../assets/turnon/img4.png'
 import img5 from '../assets/turnon/img5.png'
 import 'bootstrap/dist/css/bootstrap.min.css'
+// import turnon from '../assets/turnon.png'
+// import styled from 'styled-components'
+// import {Link} from 'react-router-dom'
+
 
 function Carrusel() {
     return (
@@ -17,7 +21,7 @@ function Carrusel() {
     </div>
     <div className="carousel-inner">
       <div className="carousel-item active">
-        <img src= {img2} className="d-block w-100" alt="..."/>
+        <img src= {img2} className="d-block w-100" alt="..."/> 
       </div>
       <div className="carousel-item">
         <img src={img3} className="d-block w-100" alt="..."/>

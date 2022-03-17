@@ -6,13 +6,14 @@ import turnon from '../assets/turnon.png'
 import dogapp from '../assets/dogspa.png'
 import pixabay from '../assets/pixabay.png'
 import cotizador from '../assets/cotizador.png'
+import Carrusel from './Carrusel'
 
 const Div = styled.div `
   background-image: url(${fondo});
   background-size:100%;
   position:absolute;
-  /* top:0;
-  bottom:0;
+  top:0;
+  /* bottom:0;
   left:0;
   right:0;  */
   display:grid;
@@ -110,6 +111,8 @@ function Projects() {
     </Div2>
     
     <Div3> <Img1 src={turnon} alt = "turnon"/></Div3>
+    {/* <Carrusel/> */}
+
     <Div3> <Img1 src={dogapp} alt = "dogapp"/> </Div3>
     
     <Div2>
