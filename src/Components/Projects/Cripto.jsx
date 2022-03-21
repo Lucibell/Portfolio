@@ -2,6 +2,37 @@ import React from 'react'
 import styled from 'styled-components'
 import cripto from '../../assets/cripto/Cripto.mp4'
 import fondo from '../../assets/fondis2.jpg'
+import { FormattedMessage } from 'react-intl'
+
+
+function Cripto() {
+
+return (
+ <Div>
+   <Div1>
+   <h1>Cotizador de Criptomonedas</h1>
+    <p><FormattedMessage id="cripto.info" defaultMessage="Desarrollo de una SPA (Single Page Application) utilizando React para el FrontEnd. La SPA consume la información desde una API con valores de criptomonedas a valor actual a través de Axios. Se crearon Hooks propios. Principal función: Cotizar en la moneda a seleccionar una lista de criptomonedas. Brinda información del precio mas alto del día, el precio mas bajo,la variacion y la última actualización." />
+       
+  
+   </p> 
+   </Div1> 
+   <Div2>
+   <video height='500px' width="750px" controls>
+   <source src={cripto}   type='video/mp4'  />
+   </video>
+
+        {/* <Carrusel/> */}
+   </Div2>
+
+          
+</Div>
+)
+
+
+}
+
+export default Cripto
+
 const Div = styled.div `
 background-image: url(${fondo});
 background-size:100%;
@@ -33,7 +64,6 @@ p {
 u {
    text-decoration:underline;
 }
-
 `
 const Div1 = styled.div `
 margin-right: 40px;
@@ -42,37 +72,3 @@ const Div2 = styled.div `
 margin-right: 40px;
 margin-top:40px;
 `
-
-function Cripto() {
-
-return (
- <Div>
-   <Div1>
-   <h1>Cotizador de Criptomonedas</h1>
-    <p>Desarrollo de una SPA (Single Page Application) utilizando React para el FrontEnd.<br/> 
-       La SPA consume la información desde una API con valores de criptomonedas a valor actual a través de Axios.<br/>
-       Se crearon Hooks propios. <br/> 
-    <br/>
-    <u>Principal función:</u> Cotizar en la moneda a seleccionar una lista de 
-       criptomonedas. <br/>Brinda información del precio mas alto del día, el precio mas bajo,
-       la variacion y la última actualización.
-        
-  
-   </p> 
-   </Div1> 
-   <Div2>
-   <video height='500px' width="750px" controls>
-   <source src={cripto}   type='video/mp4'  />
-   </video>
-
-        {/* <Carrusel/> */}
-   </Div2>
-
-          
-</Div>
-)
-
-
-}
-
-export default Cripto

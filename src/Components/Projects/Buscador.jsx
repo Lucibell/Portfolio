@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import buscador from '../../assets/buscador/buscador.mp4'
 import fondo from '../../assets/fondis2.jpg'
+import { FormattedMessage } from 'react-intl'
 
 function Buscador() {
     const Div = styled.div `
@@ -52,11 +53,7 @@ return (
  <Div>
    <Div1>
    <h1>Buscador de Imágenes de Pixabay</h1>
-    <p>Desarrollo de una SPA (Single Page Application) utilizando React para el FrontEnd.<br/> 
-       La SPA consume la información desde la API de Pixabay.<br/>
-    <br/>
-    <u>Principal función:</u> Búsqueda de imágenes y visualización en calidad máxima de las mismas.  <br/>
-    Muestra los Me gusta y la cantidad de visualizaciones.
+    <p><FormattedMessage id="image.info" defaultMessage="Desarrollo de una SPA (Single Page Application) utilizando React para el FrontEnd.La SPA consume la información desde la API de Pixabay.Principal función: Búsqueda de imágenes y visualización en calidad máxima de las mismas. Muestra los Me gusta y la cantidad de visualizaciones." />
      
    </p> 
    </Div1> 

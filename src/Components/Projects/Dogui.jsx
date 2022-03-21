@@ -2,10 +2,38 @@ import React from 'react'
 import styled from 'styled-components'
 import dogui from '../../assets/dogui/Dogui App.mp4'
 import fondo from '../../assets/fondis2.jpg'
+import { FormattedMessage } from 'react-intl'
 
 function Dogui() {
    
-    const Div = styled.div `
+    
+  return (
+      <Div>
+        <Div1>
+        <h1>Doggie App</h1>
+         <p>
+         <FormattedMessage id="dogui.info" defaultMessage="Desarrollo de una SPA (Single Page Application) utilizando React para el FrontEnd y Redux como gestor de estados. Se utilizó CSS puro sin librerías externas para estilizar los componentes de React.La SPA trae la información desde una API de razas de perros a través de un BackEnd desarrollado en NodeJs usando Express. Determinada información fue guardada en una base de datos relacional usando PostgresSQL-PgAdmin y Sequelize. Principales funciones: Barra de navegación, búsqueda de una raza de perro en particular, filtros, ordenamiento y un formulario controlado para la creación de una nueva raza de perro."/>
+            
+               </p> 
+        </Div1> 
+        <Div2>
+        <video height='500px' width="750px" controls>
+        <source src={dogui}   type='video/mp4'  />
+        </video>
+
+             {/* <Carrusel/> */}
+        </Div2>
+
+               
+    </Div>
+  )
+  
+}
+
+export default Dogui
+
+
+const Div = styled.div `
          background-image: url(${fondo});
         background-size:100%;
         position:absolute;
@@ -48,34 +76,3 @@ function Dogui() {
         margin-right: 40px;
         margin-top:40px;
     `
-
-  return (
-      <Div>
-        <Div1>
-        <h1>Doggie App</h1>
-         <p>Desarrollo de una SPA (Single Page Application) utilizando React para el FrontEnd y Redux como gestor de estados.<br/> 
-            Se utilizó CSS puro sin librerías externas para estilizar los componentes de React.
-            La SPA trae la información desde una API de razas de perros a través de un BackEnd desarrollado en NodeJs usando Express.<br/> 
-            Determinada información fue guardada en una base de datos relacional usando PostgresSQL-PgAdmin y Sequelize. <br/>
-            <br/>
-            <u>Principales funciones:</u> Barra de navegación, búsqueda de una raza de perro en particular, filtros, ordenamiento 
-            y un formulario controlado para la creación de una nueva raza de perro. 
-             
-       
-        </p> 
-        </Div1> 
-        <Div2>
-        <video height='500px' width="750px" controls>
-        <source src={dogui}   type='video/mp4'  />
-        </video>
-
-             {/* <Carrusel/> */}
-        </Div2>
-
-               
-    </Div>
-  )
-  
-}
-
-export default Dogui

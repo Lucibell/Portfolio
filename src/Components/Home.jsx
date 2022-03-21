@@ -1,20 +1,14 @@
-import React, {useContext} from 'react'
+import React  from 'react'
 import {Link} from 'react-router-dom'
-import { IntlProvider, FormattedMessage } from 'react-intl'
+import { FormattedMessage } from 'react-intl'
 import styled from 'styled-components'
 import backvideo from '../assets/video2.mp4'
-import EnglishMessages from '../languages/en-US.json'
-import SpanishMessages from '../languages/es-AR.json'
-import { langContext } from '../context/langContext'
-
 
  
 function Home() {
-  const languages = useContext(langContext)
-  console.log(languages)
-
-  return (
-    <IntlProvider locale="es-AR" messages={{SpanishMessages}}>
+ 
+ return (
+  
     <header classname="header content">
       <div classname="header-video">  
       <Video autoPlay loop muted>
@@ -30,7 +24,7 @@ function Home() {
         <Span>
           <FormattedMessage
             id="home.career" 
-            defaultMessage="Bioengineer"
+            defaultMessage="Inicio"
           />
         </Span>
         <Span>Full Stack Developer</Span>
@@ -50,7 +44,7 @@ function Home() {
      
      
     </header>
-    </IntlProvider>
+   
    
   )
 }
@@ -65,6 +59,12 @@ left: 0;
 width:100%;
 height:auto;
 z-index:-1;
+
+/* @media screen and (max-width:1024px){
+  
+  width:100%;
+  height:100%;
+} */
   
 `
 
@@ -85,14 +85,15 @@ margin-left:200px;
 margin-top:160px;
 font-size:60px;
 
+/* @media screen and (min-width: 780px) and(max-width:1024px){
+}
+@media screen and (min-width: 480px) and(max-width:780px){
 
-`
-const H2 = styled.h2 `
-color:#2C2FF0; 
-/* color:#6365E7; */
-text-align:left;
-margin-left:200px;
-font-size:60px;
+} */
+
+  @media screen and (max-width:740px){
+    font-size:50px;
+}
 
 `
 
@@ -119,6 +120,10 @@ const Boton = styled.button `
     &:hover {
     background-color: #2C2FF0;
     }
+
+    @media screen and (max-width:740px){
+    top:80%;
+}
 `
   
 const Div1 = styled.div `
@@ -155,4 +160,9 @@ const Span = styled.span `
   80%  {transform: translateY(-200%);}
   100% {transform: translateY(-312%);}
 }
+@media screen and (max-width:740px){
+ 
+    font-size:40px;
+}
 `
+

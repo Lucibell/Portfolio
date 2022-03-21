@@ -1,4 +1,5 @@
 import React from 'react'
+import { FormattedMessage } from 'react-intl'
 import github from '../assets/github.png'
 import css from '../assets/css.png'
 import vsc from '../assets/vsc.png'
@@ -6,77 +7,21 @@ import redux from '../assets/redux.png'
 import sequelize from '../assets/sequelize.png'
 import postman from '../assets/postman.jpeg'
 import styled from 'styled-components'
-import image from '../assets/imagen.jpg'
+import image from '../assets/perfil.JPG'
 import fondo from '../assets/fondis2.jpg'
 
 
-const Div = styled.div `
-  background-image: url(${fondo});
-  background-size:cover;
-  position:absolute;
-  top:0;
-  /* bottom:0;
-  left:0;
-  right:0; */
-  z-index:-10; 
-  
-`
-  const P = styled.p `
-  color: white;
-  text-align: left;
-  margin-bottom: 250px;
-  font-size: 20px;
-  font-family: 'Montserrat';
-  margin-left: -10px;
-  margin-top:50px;
-`
-  const H1 = styled.h1 `
-  color: white;
-  position: center;
-  font-family: 'Montserrat';
-  text-align:left;  
-  margin-left: 65px;
-  margin-top:100px;
-  `
-  const H2 = styled.h2 `
-  color: white;
-  text-align:left;
-  margin-left: 25px;
-  margin-top:50px;
-  margin-bottom: 30px;
-`
-  const IMG = styled.img `
-  width:"150" ;
-  height:"150";
-  z-index:2;
-`
-
-const  DivC = styled.div `
-  display: flex;
-  justify-content: space-evenly;
-`
-const Ic = styled.img `
-  margin-left: 40px;
-  margin-bottom:30px;
-`
-
 
 function Aboutme() {
-
   
   return (
     <Div>
-       <H1>Hola!</H1> 
+       <H1>
+       <FormattedMessage id="aboutme.h1" defaultMessage="Hola"/>
+        </H1> 
        <DivC>
        <P>
-          Soy Luciana, desarrolladora Full Stack y Bioingeniera.  <br/>
-          Apasionada por aprender, me uno a este mundo IT,<br/> 
-          sin fronteras para crecer. <br/>
-          Encuentro en este mundo la posibilidad de crear soluciones<br/>  
-          a todo tipo de problemas. <br/>
-          Me gusta compartir equipos de trabajo y las dinamicas ágiles <br/>
-          En mi tiempo libre me gusta leer, nadar, disfrutar de mi familia <br/> 
-          y viajaaar <br/>
+       <FormattedMessage id="aboutme.me" defaultMessage="Hola"/>
        </P>
        <IMG src= {image} alt="perfil"  />
        </DivC>
@@ -114,3 +59,65 @@ function Aboutme() {
 }
 
 export default Aboutme
+
+
+
+const Div = styled.div `
+  background-image: url(${fondo});
+  background-size:cover;
+  position:absolute;
+  top:0;
+  /* bottom:0;
+  left:0;
+  right:0; */
+  z-index:-10; 
+  
+`
+  const P = styled.p `
+  color: white;
+  text-align: left;
+  margin-bottom: 60px;
+  font-size: 20px;
+  font-family: 'Montserrat';
+  margin-right:70px;
+  margin-top:50px;
+`
+  const H1 = styled.h1 `
+  color: white;
+  position: center;
+  font-family: 'Montserrat';
+  text-align:left;  
+  margin-left: 65px;
+  margin-top:100px;
+  `
+  const H2 = styled.h2 `
+  color: white;
+  text-align:left;
+  margin-left: 25px;
+  margin-top:20px;
+  margin-bottom: 30px;
+`
+  const IMG = styled.img `
+  width:auto ;
+  height:400px;
+  z-index:2;
+  margin-right:125px;
+  margin-bottom:50px;
+  margin-top:50px;
+`
+
+const  DivC = styled.div `
+  display: flex;
+  justify-content:row;
+  margin-left:50px;
+
+  @media screen and (max-width:860px){
+    flex-direction:column;
+   
+
+  }
+`
+const Ic = styled.img `
+  margin-left: 40px;
+  margin-bottom:30px;
+`

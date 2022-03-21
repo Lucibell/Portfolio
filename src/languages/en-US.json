@@ -1,28 +1,24 @@
 {
     "home.career":"Bioengineer",
-
     "nav.home":"Home",
-    "nav.aboutme":"Aboutme",
+    "nav.aboutme":"About me",
     "nav.projects":"Projects",
     "nav.contact":"Contact me",
-
     "aboutme.h1":"Hi, there",
-    "aboutme.me":"Soy Luciana, desarrolladora Full Stack y Bioingeniera. Apasionada por aprender, me uno a este mundo IT, sin fronteras para crecer. Encuentro en este mundo la posibilidad de crear soluciones a todo tipo de problemas.Me gusta compartir equipos de trabajo y las dinamicas ágiles. En mi tiempo libre me gusta leer, nadar, disfrutar de mi familia y viajaaar",
-
+    "aboutme.me":"I am Luciana, FullStack Developer and Bioengineer. Curious and encouraged always by new challenges I decided after I had graduated as Bioengineer to carry out a trip to english countries, first Australia, then England where I have been for three years improving the english language, meeting up beautiful people and gaining work experience. In 2021 I started to inmerse myself in the IT world where I found that programming as a means of entry to a fascinating world. It gives me the possiblity to find solutions to any problem and growth without limits. I enjoy working in teams and I am known to be responsible, flexible and dedicated with a special love to learn new things all the time. In my spare time I like reading, swimming, travelling and enjoying my family and friends.",
     "projects.turnon":"Development of a SPA and mobile app for booking sports courts",
+    "button.detail":"See More",
     "projects.doguiapp":"Development of a Doguie SPA which shows dogs breeds and other features",
     "projects.titcripto":"Cryptocurrency quoter",
     "projects.crypto":"Development of a SPA which quote Cryptocurrency up-to-the minute",
     "projects.titimages":"Image Search",
     "projects.images":"Development of a SPA which search images from Pixabay",
-
-    "turnon.info":"<p>Development of a mobile app for users sports courts bookings. Development of a SPA whose features are register the sportive center, shift management and bookings history. Development of an administrator SPA with total access to all user and supplier features.Technologies used: React - React Native - Redux - Node Js - Express - PostgreSQL - CSS.My contribution: BackEnd: Initial configuration of express and sequelize. Set the database relational models. Controllers and routes. FrontEnd: application of Material Table library and CSS in the WebPage.",
-    "dogui.info":"Development of a SPA (Single Page Application) using React Js for the Front End and Redux as state management. All React components were styled with pure CSS without any external libraries. The SPA consumes data from a dog API through a BackEnd developed in NodeJs using Express. Some Api information were stored in a relational database using PostgresSQL-PgAdmin and Sequelize. The principals features are: navigation bar, specific dog searching, filters, sorting and controlled forms for creating a new dog´s breed", 
-    "cripto.info":"<p>Development of a SPA (Single Page Application) using React for the FrontEnd.<br/> The SPA consumes API information with criptocurrencies up-to-the minute through Axios.<br/> Own Hooks were created. <br/><br/> <u>Main function:</u> Quoting Cryptocurrency from a list of different currencies. <br/> It provides information about the highest and lowest prices in the day, the variation among them and the last update.",
-    "image.info":"<p>Development of a SPA (Single Page Application) using React for the FrontEnd.<br/> The SPA consumes Pixabay API images information.<br/><br/> <u>Main function:</u> Images Search and maximum viewing quality.<br/> It shows the quantity of Likes and visualizations.",
-
-    "contact.title":"Contact me"
-
-
+    "turnon.info":"Development of a mobile app for users sports courts bookings. Development of a SPA whose features are register the sportive center, shift management and bookings history. Development of an administrator SPA with total access to all user and supplier features.Technologies used: React - React Native - Redux - Node Js - Express - PostgreSQL - CSS.My contribution: BackEnd: Initial configuration of express and sequelize. Set the database relational models. Controllers and routes. FrontEnd: application of Material Table library and CSS in the WebPage.",
+    "dogui.info":"Development of a SPA (Single Page Application) using React Js for the Front End and Redux as state management. All React components were styled with pure CSS without any external libraries. The SPA consumes data from a dog API through a BackEnd developed in NodeJs using Express. Some Api information were stored in a relational database using PostgresSQL-PgAdmin and Sequelize. The principals features are: navigation bar, specific dog searching, filters, sorting and controlled forms for creating a new dog´s breed.",
+    "cripto.info":"Development of a SPA (Single Page Application) using React for the FrontEnd. The SPA consumes API information with criptocurrencies up-to-the minute through Axios. Own Hooks were created. Main function: Quoting Cryptocurrency from a list of different currencies.  It provides information about the highest and lowest prices in the day, the variation among them and the last update.",
+    "image.info":"Development of a SPA (Single Page Application) using React for the FrontEnd. The SPA consumes Pixabay API images information. Main function: Images Search and maximum viewing quality. It shows the quantity of Likes and visualizations.",
+    "contact.title":"If you are interested in my profile, dont hesitate to send me a message",
+    "contact.name": "Name",
+    "contact.message":"Message",
+    "contact.send":"Send"
 }
-
