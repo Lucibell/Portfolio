@@ -8,7 +8,7 @@ import dogapp from '../assets/dogspa.png'
 import pixabay from '../assets/pixabay.png'
 import cotizador from '../assets/cotizador.png'
 import detalles from '../assets/detalles.png'
-import Carrusel from './Carrusel'
+// import Carrusel from './Carrusel'
 
 
 function Projects() {
