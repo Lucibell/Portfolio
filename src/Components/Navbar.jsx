@@ -81,10 +81,10 @@ const Div = styled.div`
 
 const Span = styled.span`
     margin-right: 30px;
+    margin-left:8px;
     @media screen and (max-width:480px){
     margin-right:10px;
-    margin-left:5px;
-        }
+    }
     
     /* color:white; */
     `
