@@ -17,9 +17,9 @@ return (
    </p> 
    </Div1> 
    <Div2>
-   <video height='500px' width="750px" controls>
+   <Video height='500px' width="750px" controls>
    <source src={cripto}   type='video/mp4'  />
-   </video>
+   </Video>
 
         {/* <Carrusel/> */}
    </Div2>
@@ -59,16 +59,47 @@ p {
    text-align: start;
    margin-left:30px;
    margin-top:30px;
+   font-size:20px;
+   @media screen and (max-width:615px){
+   font-size:18px;}
   
 }
 u {
    text-decoration:underline;
 }
+   @media screen and (max-width:1310px){
+  
+  grid-template-columns: repeat(1, 1fr);
+
+}
 `
 const Div1 = styled.div `
-margin-right: 40px;
-`
+   margin-right: 40px;
+   @media screen and (max-width:1310px){
+   margin-top: 50px;}
+   `
 const Div2 = styled.div `
-margin-right: 40px;
-margin-top:40px;
+   margin-right: 40px;
+   margin-top:40px;
+   @media screen and (max-width:1310px){
+   margin-top: -30px; 
+      }
+   @media screen and (max-width:590px){
+   margin-left:15px;
+      }
+   `
+
+const Video = styled.video `
+   height:500px ;
+   width:750px ;
+   @media screen and (max-width:1100px){
+   height:400px ;
+   width:650px ;
+   @media screen and (max-width:715px){
+   height:300px ;
+   width:550px ;
+   @media screen and (max-width:590px){
+   height:250px ;
+   width:350px ;
+   }
 `

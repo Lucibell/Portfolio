@@ -71,6 +71,10 @@ const Div = styled.div `
   left:0;
   right:0; */
   z-index:-10; 
+
+
+
+
   
 `
   const P = styled.p `
@@ -81,6 +85,14 @@ const Div = styled.div `
   font-family: 'Montserrat';
   margin-right:70px;
   margin-top:50px;
+
+  @media screen and (max-width:480px){
+    flex-direction:column;
+    font-size: 15px;
+  }
+
+
+
 `
   const H1 = styled.h1 `
   color: white;
@@ -104,6 +116,11 @@ const Div = styled.div `
   margin-right:125px;
   margin-bottom:50px;
   margin-top:50px;
+
+  @media screen and (max-width:480px){
+    width: 320px ;
+    height:auto;
+  }
 `
 
 const  DivC = styled.div `
@@ -111,13 +128,15 @@ const  DivC = styled.div `
   justify-content:row;
   margin-left:50px;
 
-  @media screen and (max-width:860px){
+  @media screen and (max-width:1350px){
     flex-direction:column;
+    font-size: 5px;
    
-
   }
 `
 const Ic = styled.img `
   margin-left: 40px;
   margin-bottom:30px;
+
+ 
 `

@@ -9,11 +9,11 @@ function Home() {
  
  return (
   
-    <header classname="header content">
+    <Div classname="header content">
       <div classname="header-video">  
-      <Video autoPlay loop muted>
+      <video autoPlay loop muted>
         <source src={backvideo} type='video/mp4' />
-      </Video>  
+      </video>  
       </div>
    
       <DivContenido>
@@ -43,7 +43,7 @@ function Home() {
       </DivContenido>
      
      
-    </header>
+    </Div>
    
    
   )
@@ -52,13 +52,32 @@ function Home() {
 
 export default Home
 
-const Video = styled.video `
- position:absolute; 
-top: 0;
-left: 0;
-width:100%;
-height:auto;
-z-index:-1;
+
+const Div = styled.div`
+   background-size:contain;
+
+
+video {
+
+  position:absolute; 
+  top: 0;
+  left: 0;
+  width:auto;
+  height:auto;
+  z-index:-1;
+
+  @media screen and (max-width:860px){
+    /* position:absolute; 
+  top: 0;
+  left: 0;
+  width:100%vw;
+  height:100%vh;
+  z-index:-1; */
+    
+  }
+}
+
+`
 
 /* @media screen and (max-width:1024px){
   
@@ -66,15 +85,13 @@ z-index:-1;
   height:100%;
 } */
   
-`
+
 
 const DivContenido = styled.div `
   z-index:2;
   text-align: center;
   line-height: 1;
   font-family: 'Montserrat';
-  
-
 `
  
 const H1 = styled.h1 `
@@ -83,17 +100,14 @@ color:#ECECF4;
 text-align:left;
 margin-left:200px;
 margin-top:160px;
-font-size:60px;
+font-size:80px;
 
-/* @media screen and (min-width: 780px) and(max-width:1024px){
+@media screen and (max-width:480px){
+  font-size:60px;
+  margin-left:48px;
+
 }
-@media screen and (min-width: 480px) and(max-width:780px){
 
-} */
-
-  @media screen and (max-width:740px){
-    font-size:50px;
-}
 
 `
 
@@ -113,7 +127,7 @@ const Boton = styled.button `
     color:#E2E2EC;
     position:absolute;
     left:28%;
-    top:73%;
+    top:70%;
     opacity:0.85;
     transition:background-color .3s ease;
   
@@ -121,7 +135,7 @@ const Boton = styled.button `
     background-color: #2C2FF0;
     }
 
-    @media screen and (max-width:740px){
+    @media screen and (max-width:480px){
     top:80%;
 }
 `
@@ -150,7 +164,7 @@ const Span = styled.span `
 /* color:#6365E7; */
   text-align:left;
   margin-left:90px;
-  font-size:50px;
+  font-size:55px;
   animation:spin_words 6s infinite;
 
  @keyframes spin_words {
@@ -160,9 +174,21 @@ const Span = styled.span `
   80%  {transform: translateY(-200%);}
   100% {transform: translateY(-312%);}
 }
-@media screen and (max-width:740px){
+@media screen and (max-width:860px){
  
-    font-size:40px;
+    font-size:30px;
+    margin-left:-60px;
+    margin-top:30px;
+
+    @keyframes spin_words {
+      30%   {transform: translateY(-170%);}  
+      40%  {transform: translateY(-150%);} 
+      60%  {transform: translateY(-340%);}
+      80%  {transform: translateY(-320%);}
+      100% {transform: translateY(-470%);}
+}
+
+
+
 }
 `
-

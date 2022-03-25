@@ -5,7 +5,33 @@ import fondo from '../../assets/fondis2.jpg'
 import { FormattedMessage } from 'react-intl'
 
 function Buscador() {
-    const Div = styled.div `
+
+
+    return (
+        <Div>
+            <Div1>
+                <h1>Buscador de Imágenes de Pixabay</h1>
+                <p><FormattedMessage id="image.info" defaultMessage="Desarrollo de una SPA (Single Page Application) utilizando React para el FrontEnd.La SPA consume la información desde la API de Pixabay.Principal función: Búsqueda de imágenes y visualización en calidad máxima de las mismas. Muestra los Me gusta y la cantidad de visualizaciones." />
+
+                </p>
+            </Div1>
+            <Div2>
+                <Video height='500px' width="750px" controls>
+                    <source src={buscador} type='video/mp4' />
+                </Video>
+
+                {/* <Carrusel/> */}
+            </Div2>
+
+
+        </Div>
+    )
+
+
+}
+export default Buscador
+
+const Div = styled.div`
     background-image: url(${fondo});
    background-size:100%;
    position:absolute;
@@ -32,45 +58,50 @@ function Buscador() {
        text-align: start;
        margin-left:30px;
        margin-top:30px;
+       font-size:20px;
+        @media screen and (max-width:615px){
+        font-size:18px;}
       
    }
    u {
        text-decoration:underline;
    }
-
-`
-
-const Div1 = styled.div `
-   margin-right: 40px;
-`
-
-const Div2 = styled.div `
-   margin-right: 40px;
-   margin-top:40px;
-`
-
-return (
- <Div>
-   <Div1>
-   <h1>Buscador de Imágenes de Pixabay</h1>
-    <p><FormattedMessage id="image.info" defaultMessage="Desarrollo de una SPA (Single Page Application) utilizando React para el FrontEnd.La SPA consume la información desde la API de Pixabay.Principal función: Búsqueda de imágenes y visualización en calidad máxima de las mismas. Muestra los Me gusta y la cantidad de visualizaciones." />
-     
-   </p> 
-   </Div1> 
-   <Div2>
-   <video height='500px' width="750px" controls>
-   <source src={buscador}   type='video/mp4'  />
-   </video>
-
-        {/* <Carrusel/> */}
-   </Div2>
-
-          
-</Div>
-)
-
+   @media screen and (max-width:1310px){
+      grid-template-columns: repeat(1, 1fr);
 
 }
 
+`
 
-export default Buscador
+const Div1 = styled.div`
+   margin-right: 40px;
+   @media screen and (max-width:1310px){
+   margin-top: 50px;}
+`
+
+const Div2 = styled.div`
+    margin-right: 40px;
+    margin-top:40px;
+    @media screen and (max-width:1310px){
+   margin-top: -30px; 
+      }
+   @media screen and (max-width:590px){
+   margin-left:15px;
+      }
+`
+const Video = styled.video `
+   height:500px ;
+   width:750px ;
+   @media screen and (max-width:1100px){
+   height:400px ;
+   width:650px ;
+   @media screen and (max-width:715px){
+   height:300px ;
+   width:550px ;
+   @media screen and (max-width:590px){
+   height:250px ;
+   width:350px ;
+   }
+   `
+
+

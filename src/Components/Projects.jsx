@@ -105,7 +105,6 @@ const Div = styled.div `
   align-items: center;
 
   @media screen and (max-width:1200px){
-  
     grid-template-columns: repeat(1, 1fr);
     
   }
@@ -119,16 +118,30 @@ const Div2= styled.div `
   justify-items:center;
 
 
+
   h2 {
     margin-top: 140px;
     font-size: 30px;
+    @media screen and (max-width:480px){
+    font-size:20px;
+    margin-top: 90px;
+    
+}
+
   }
 
   p {  
     font-size: 25px;
     margin-top: -60px;
     margin-right:10px;
+    @media screen and (max-width:480px){
+    font-size:15px;
+    margin-top: -80px;
+    
+}
   }
+
+
 
 `
 const Div3= styled.div `
@@ -170,14 +183,14 @@ const Button1 = styled(Boton) `
 const Button2 = styled(Boton) `
   top:42%;
   @media screen and (max-width:1200px){
-  top:35.5%;
+  top:35%;
     
 }
 `
 const Button3 = styled(Boton) `
   top:66%;
   @media screen and (max-width:1200px){
-  top:60%
+  top:59%
     
 }
 `
@@ -192,8 +205,14 @@ const Img1 = styled.img`
 height: 320px;
 width:auto;
 margin-right:-10px;
+
 @media screen and (max-width:1200px){
-margin-top:-130px;
+margin-top:-200px;
+height: auto;
+width:350px;
+
+/* margin-left:20px;
+margin-right:20px; */
 
 }
   

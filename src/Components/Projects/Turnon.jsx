@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Carrusel from '../Carrusel'
+// import Carrusel from '../Carrusel'
 import turnonvideo from '../../assets/turnon/turnonvideo.mp4'
 import fondo from '../../assets/fondis2.jpg'
 import { FormattedMessage } from 'react-intl'
@@ -19,9 +19,9 @@ function Turnon() {
             </p> 
         </Div1> 
         <Div2>
-        <video controls>
+        <Video controls>
         <source src={turnonvideo}  type='video/mp4'  />
-        </video>
+        </Video>
 
              {/* <Carrusel/> */}
         </Div2>
@@ -60,6 +60,9 @@ const Div = styled.div `
             text-align: start;
             margin-left:30px;
             margin-top:30px;
+            font-size:20px;
+            @media screen and (max-width:615px){
+            font-size:16px;}
            
         }
         u {
@@ -68,20 +71,46 @@ const Div = styled.div `
         @media screen and (max-width:1300px){
   
         grid-template-columns: repeat(1, 1fr);
-        
-  
+        margin-top:50px;
+       
         }
      
      `
 
     const Div1 = styled.div `
         margin-right: 40px;
+        @media screen and (max-width:1100px){
+            margin-top: 50px;}
+
     `
 
     const Div2 = styled.div `
         margin-right: 40px;
         margin-top:40px;
-    `
+   
+        /* @media screen and (max-width:1310px){
+            margin-top: -10px;}
+        @media screen and (max-width:590px){
+            margin-left:15px;
+        } */
+        `
+    const Video = styled.video `
+     height:500px ;
+     width:750px ;
+     @media screen and (max-width:1100px){
+     height:400px ;
+     width:650px ;
+     @media screen and (max-width:715px){
+     height:300px ;
+     width:550px ;
+     @media screen and (max-width:590px){
+     height:auto ;
+     width:350px ;
+     margin-left:15px;
+ }
+
+
+ `
 
    
     
