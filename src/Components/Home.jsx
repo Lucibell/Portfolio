@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import { FormattedMessage } from 'react-intl'
 import styled from 'styled-components'
 import backvideo from '../assets/video2.mp4'
+import fondo from '../assets/fondis2.jpg'
 
  
 function Home() {
@@ -55,27 +56,39 @@ export default Home
 
 const Div = styled.div`
    background-size:contain;
-
-
+  
 video {
+    position:absolute; 
+    top: 0;
+    left: 0; 
+    width:100%;
+    height:auto;
+    z-index:-1;
+  
 
-  position:absolute; 
-  top: 0;
-  left: 0;
-  width:auto;
-  height:auto;
-  z-index:-1;
-
-  @media screen and (max-width:860px){
-    /* position:absolute; 
-  top: 0;
-  left: 0;
-  width:100%vw;
-  height:100%vh;
-  z-index:-1; */
-    
-  }
+  @media screen and (max-width:1160px){
+    display:none;
+  
+  } 
 }
+  @media screen and (max-width:1160px){
+    background-image: url(${fondo}); 
+    background-size:100%;
+    position:fixed;
+    bottom:0;
+    top:0;
+    right:0;
+    left:0;
+    /* height:100vh; */
+    z-index:-1;
+  } 
+   /* color:white;
+   justify-items: center;
+   align-items: center;
+   color:white;
+   font-family:"Montserrat", cursive; */
+  
+
 
 `
 
@@ -99,15 +112,14 @@ color:#ECECF4;
 /* color:#E2E2EC; */
 text-align:left;
 margin-left:200px;
-margin-top:160px;
+margin-top:170px;
 font-size:80px;
 
-@media screen and (max-width:480px){
+@media screen and (max-width:860px){
   font-size:60px;
   margin-left:48px;
 
 }
-
 
 `
 
@@ -135,8 +147,8 @@ const Boton = styled.button `
     background-color: #2C2FF0;
     }
 
-    @media screen and (max-width:480px){
-    top:80%;
+    @media screen and (max-width:860px){
+    top:50%;
 }
 `
   
@@ -179,6 +191,8 @@ const Span = styled.span `
     font-size:30px;
     margin-left:-60px;
     margin-top:30px;
+    color:#1F81E4;
+    /* color:#1284F7; */
 
     @keyframes spin_words {
       30%   {transform: translateY(-170%);}  
@@ -192,3 +206,5 @@ const Span = styled.span `
 
 }
 `
+
+

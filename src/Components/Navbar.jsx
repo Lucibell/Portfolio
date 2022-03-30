@@ -90,9 +90,9 @@ const Span = styled.span`
     `
 const Div3 = styled.div`
    
-        /* display:flex; 
-        justify-content:flex-end; */
-        margin-left:850px;
+        display:flex; 
+        /* justify-content:flex-end; */
+        margin-left:63%;
     
         /* @media screen and (max-width:860px){
         margin-left:500px;
@@ -114,9 +114,9 @@ const Img = styled.img`
 const Button = styled.button `
     padding:0px;  
     margin-top: 0px;
-    height:40px;    
+    /* height:40px;     */
     background-color: transparent;
-    width:auto;
+    /* width:auto; */
     margin-right:5px;
 
 `

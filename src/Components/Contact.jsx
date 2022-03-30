@@ -37,11 +37,7 @@ export default function Contact() {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        if( 
-            input.user_name && 
-            input.user_email && 
-            input.user_message
-        ){
+        if( input.user_name && input.user_email && input.user_message){
             emailjs.sendForm( "service_u69zbjh",
                   "template_8d2jdpe", 
                   form.current,
@@ -61,25 +57,18 @@ export default function Contact() {
             })
          
         }
-            alert ("Debe completar todos los campos")
+          else {  alert ("Debe completar todos los campos") }
             
     }
   
     return (
         <Div >
-             <div className="container  text-light "
-                  style= {{
-                  marginTop: "100px",
-                  width: "50%",
-                  backgroundPosition: "center",
-                }}
-                >
-                 
+             <Div2 className="container  text-light ">
                   <h4 style={{marginTop:"25px"}}> 
                     <FormattedMessage id= "contact.title" defaultMessage="Contactame"/></h4>
                                  
                   <form ref={form} onSubmit={sendEmail} className="row" 
-                         style = {{margin: "25px 85px 75px 100px" }}>
+                         style = {{margin: "10% 20% 20% 20%" }}>
                              <Label><FormattedMessage id= "contact.name" defaultMessage="Nombre"/></Label>
                             <input 
                               type='text' 
@@ -117,7 +106,7 @@ export default function Contact() {
                                 <FormattedMessage id= "contact.send" defaultMessage="Enviar"/>
                              </button>
                         </form>
-                        </div>
+                        </Div2>
                         <Div1>
                         <a href="mailto:lucibelleggia@gmail.com"><Img src={gmail} alt=""/> </a> 
                         <a href="https://github.com/Lucibell"><Img src={github} alt=""/> </a> 
@@ -134,7 +123,7 @@ const Div = styled.div `
    background-image: url(${fondo});
    background-size:100%;
    position:absolute;
-   bottom:0;
+   /* bottom:0; */
    top:0;
    left:0;
    right:0; 
@@ -145,12 +134,28 @@ const Div = styled.div `
    font-family:"Montserrat", cursive;
    display:flex;
    /* margin-top:20px; */
-   
+   @media screen and (max-width:840px){
+     display:grid;
+     grid-template-columns: repeat(1, 1fr);
+     padding-bottom:100%;
+      
+      } 
+    
+  `
+  const Div2 = styled.div `
+    margin-top: 60px;
+    width: 50%;
+    background-position: "center";
+  
+    @media screen and (max-width:1200px){
+     width:100%; }
+
   `
 
   const Label = styled.label `
   display:flex;
   margin-top:10px;
+  
   /* padding:5px; */
    
   `
@@ -165,4 +170,10 @@ const Div = styled.div `
     display: flex;
     flex-direction:column;
     margin-right: 200px;
+
+    @media screen and (max-width:840px){
+    display:flex;
+    flex-direction:row;
+    margin-top:-20px;
+    margin-right: 0px;
   `

@@ -47,7 +47,10 @@ const Div = styled.div`
    align-items: center;
    color:white;
    font-family:"Montserrat", cursive;
-   z-index:-1;  
+  
+   @media screen and (max-width:480px){
+    bottom:auto;
+    padding-bottom:100%;}    
 
    h1 {
        margin-top:30px
@@ -63,9 +66,7 @@ const Div = styled.div`
         font-size:18px;}
       
    }
-   u {
-       text-decoration:underline;
-   }
+  
    @media screen and (max-width:1310px){
       grid-template-columns: repeat(1, 1fr);
 
@@ -83,7 +84,7 @@ const Div2 = styled.div`
     margin-right: 40px;
     margin-top:40px;
     @media screen and (max-width:1310px){
-   margin-top: -30px; 
+   margin-top: 0px; 
       }
    @media screen and (max-width:590px){
    margin-left:15px;

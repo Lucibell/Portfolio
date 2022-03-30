@@ -49,6 +49,10 @@ const Div = styled.div `
         align-items: center;
         color:white;
         font-family:"Montserrat", cursive;
+
+        @media screen and (max-width:480px){
+        bottom:auto;
+        padding-bottom:20%;}    
         
 
         h1 {
@@ -71,7 +75,7 @@ const Div = styled.div `
         @media screen and (max-width:1300px){
   
         grid-template-columns: repeat(1, 1fr);
-        margin-top:50px;
+         padding-top:15%  }
        
         }
      
@@ -79,8 +83,8 @@ const Div = styled.div `
 
     const Div1 = styled.div `
         margin-right: 40px;
-        @media screen and (max-width:1100px){
-            margin-top: 50px;}
+        /* @media screen and (max-width:1100px){
+            margin-top: 50px;} */
 
     `
 

@@ -49,6 +49,11 @@ justify-items: center;
 align-items: center;
 font-family:"Montserrat", cursive;
 
+@media screen and (max-width:480px){
+bottom:auto;
+padding-bottom:32%;
+}
+
 
 h1 {
    margin-top:30px

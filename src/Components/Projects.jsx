@@ -103,6 +103,8 @@ const Div = styled.div `
   color:white;
   justify-items: center;
   align-items: center;
+  padding-right:65px;
+  padding-left:20px;
 
   @media screen and (max-width:1200px){
     grid-template-columns: repeat(1, 1fr);
@@ -163,7 +165,7 @@ const Boton = styled.button `
     left:22%;
     
     @media screen and (max-width:1200px){
-    left:50%;
+    left:38%;
     
 }
   

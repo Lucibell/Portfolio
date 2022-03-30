@@ -51,6 +51,11 @@ const Div = styled.div `
         font-family:"Montserrat", cursive;
        
 
+        @media screen and (max-width:480px){
+        bottom:auto;
+        padding-bottom:50px;}
+       
+
         h1 {
             margin-top:30px
 

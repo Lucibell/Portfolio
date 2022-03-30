@@ -28,19 +28,19 @@ function Aboutme() {
        <H2> Tech skills </H2>
        <p align="left"> 
       
-       <Ic src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="130" height="130"/> 
-       <Ic src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="130" height="130"/> 
-       <Ic src={redux} alt="redux" width="130" height="130"/> 
-       <Ic src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="130" height="130"/> 
-       <Ic src={css} alt="css" width="130" height="130"/>
-       <Ic src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="130" height="130"/> 
-       <Ic src={sequelize} alt="sequelize" width="130" height="130"/>
-       <Ic src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="130" height="130"/> 
-       <Ic src={github} alt="github" width="130" height="130"/>
+       <Ic src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" /> 
+       <Ic src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" /> 
+       <Ic src={redux} alt="redux" /> 
+       <Ic src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" /> 
+       <Ic src={css} alt="css" />
+       <Ic src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" /> 
+       <Ic src={sequelize} alt="sequelize" />
+       <Ic src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" /> 
+       <Ic src={github} alt="github" />
        {/* <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/>  */}
-       <Ic src={vsc} alt="github" width="130" height="130"/>
-       <Ic src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="130" height="130"/>  
-       <Ic src= {postman} alt="postman" width="130" height="130"/>
+       <Ic src={vsc} alt="github"/>
+       <Ic src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" />  
+       <Ic src= {postman} alt="postman" />
 
        {/* <H2> Soft skills </H2>
        <ul>
@@ -71,11 +71,7 @@ const Div = styled.div `
   left:0;
   right:0; */
   z-index:-10; 
-
-
-
-
-  
+ 
 `
   const P = styled.p `
   color: white;
@@ -110,17 +106,17 @@ const Div = styled.div `
   margin-bottom: 30px;
 `
   const IMG = styled.img `
-  width:auto ;
+  width:80% ;
   height:400px;
   z-index:2;
   margin-right:125px;
   margin-bottom:50px;
   margin-top:50px;
 
-  @media screen and (max-width:480px){
+  @media screen and (max-width:600px){
     width: 320px ;
     height:auto;
-  }
+    margin-top:50px;}
 `
 
 const  DivC = styled.div `
@@ -137,6 +133,10 @@ const  DivC = styled.div `
 const Ic = styled.img `
   margin-left: 40px;
   margin-bottom:30px;
-
+  width:100px; 
+  height:100px;
+  @media screen and (max-width:860px){
+    width:75px
+    height:75px
  
 `
