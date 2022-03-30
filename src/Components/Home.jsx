@@ -148,7 +148,7 @@ const Boton = styled.button `
     }
 
     @media screen and (max-width:860px){
-    top:50%;
+    top:65%;
 }
 `
   
