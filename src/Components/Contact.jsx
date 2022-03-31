@@ -163,6 +163,8 @@ const Div = styled.div `
   const Img= styled.img `
     height:70px;
     margin-bottom:20px;
+    @media screen and (max-width:840px){
+      margin-right:10px;
     
   `
   const Div1 = styled.div `

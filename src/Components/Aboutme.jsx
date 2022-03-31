@@ -71,6 +71,7 @@ const Div = styled.div `
   left:0;
   right:0; */
   z-index:-10; 
+  padding-right:10px;
  
 `
   const P = styled.p `
@@ -79,16 +80,14 @@ const Div = styled.div `
   margin-bottom: 60px;
   font-size: 20px;
   font-family: 'Montserrat';
-  margin-right:70px;
+  margin-right:10%;
   margin-top:50px;
 
   @media screen and (max-width:480px){
     flex-direction:column;
     font-size: 15px;
+    margin-right:25%;
   }
-
-
-
 `
   const H1 = styled.h1 `
   color: white;
@@ -127,8 +126,7 @@ const  DivC = styled.div `
   @media screen and (max-width:1350px){
     flex-direction:column;
     font-size: 5px;
-   
-  }
+ }
 `
 const Ic = styled.img `
   margin-left: 40px;

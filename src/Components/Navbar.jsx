@@ -37,8 +37,8 @@ return (
                     </Span>
                 
             <Div3>
-                     <Button onClick = { () => lang.setLanguage("en-US")} ><Img src={reinounido} alt="" height="40px" width="auto" /></Button>
-                     <Button onClick = { () => lang.setLanguage("es-AR")} ><Img src={argentina} alt="" height="40px" width="auto" /></Button>
+                     <Button onClick = { () => lang.setLanguage("en-US")} ><Img src={reinounido} alt=""  /></Button>
+                     <Button onClick = { () => lang.setLanguage("es-AR")} ><Img src={argentina} alt=""  /></Button>
             </Div3>
             
         </Div>
@@ -74,16 +74,13 @@ const Div = styled.div`
     opacity:0.60; 
     align-items:center;
     margin-top:-10px;
-  
-    
-  
     `
 
 const Span = styled.span`
     margin-right: 30px;
     margin-left:8px;
     @media screen and (max-width:480px){
-    margin-right:10px;
+    margin-right:5px;
     }
     
     /* color:white; */
@@ -93,6 +90,8 @@ const Div3 = styled.div`
         display:flex; 
         /* justify-content:flex-end; */
         margin-left:63%;
+        
+
     
         /* @media screen and (max-width:860px){
         margin-left:500px;
@@ -103,62 +102,22 @@ const Div3 = styled.div`
         margin-left:0px;
         display:flex;
         }
-        
     `
 const Img = styled.img`
-        margin-top:0px;
+        margin-top:-7px;
         padding:0px;
-           
-
+        height:40px; 
+        width:auto;
     `
+
 const Button = styled.button `
     padding:0px;  
     margin-top: 0px;
-    /* height:40px;     */
     background-color: transparent;
-    /* width:auto; */
     margin-right:5px;
+    height:30px; 
+    width:auto;
 
 `
 
 
-{/* <header className="navbar">
-        <div>
-            <img id="logoHenry" src={Logo} width="30" height="30" className="d-inline-block align-top" alt="" />
-        </div>
-        <Div>
-            <ul className="list">
-                <Li className="list-item">
-                    <Divl>
-                        <Link to="/" style={{textDecoration:"none" , color:"white"}} >
-                            <FormattedMessage id="nav.home" defaultMessage="Inicio" />
-                        </Link>
-                    </Divl>
-                    <Divl> 
-                    <Link to="/aboutme" style={{textDecoration:"none" , color:"white"}}> 
-                            <FormattedMessage id="nav.aboutme" defaultMessage="Sobre mi" />
-                    
-                    </Link>
-                    </Divl>
-                    <Divl> 
-                    <Link to="/projects" style={{textDecoration:"none" , color:"white"}}> 
-                            <FormattedMessage id="nav.projects" defaultMessage="Proyectos"/>
-                   </Link>
-                    </Divl>
-                    <Divl> 
-                    <Link to="/contact" style={{textDecoration:"none" , color:"white"}}> 
-                            <FormattedMessage id="nav.contact" defaultMessage="Contacto"/>
-                    </Link>
-                    </Divl>
-                   
-                </Li>
-            </ul>
-            
-            <Div3>
-                     <Button onClick = { () => lang.setLanguage("en-US")} ><Img src={reinounido} alt="" height="40px" width="auto" /></Button>
-                     <Button onClick = { () => lang.setLanguage("es-AR")} ><Img src={argentina} alt="" height="40px" width="auto" /></Button>
-            </Div3>
-            
-        </Div>
-    </header>
- */}
