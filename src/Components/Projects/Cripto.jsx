@@ -11,9 +11,7 @@ return (
  <Div>
    <Div1>
    <h1>Cotizador de Criptomonedas</h1>
-    <p><FormattedMessage id="cripto.info" defaultMessage="Desarrollo de una SPA (Single Page Application) utilizando React para el FrontEnd. La SPA consume la información desde una API con valores de criptomonedas a valor actual a través de Axios. Se crearon Hooks propios. Principal función: Cotizar en la moneda a seleccionar una lista de criptomonedas. Brinda información del precio mas alto del día, el precio mas bajo,la variacion y la última actualización." />
-       
-  
+   <p><FormattedMessage id="cripto.info" defaultMessage="Desarrollo de una SPA (Single Page Application) utilizando React para el FrontEnd. La SPA consume la información desde una API con valores de criptomonedas a valor actual a través de Axios. Se crearon Hooks propios. Principal función: Cotizar en la moneda a seleccionar una lista de criptomonedas. Brinda información del precio mas alto del día, el precio mas bajo,la variacion y la última actualización." />
    </p> 
    </Div1> 
    <Div2>
@@ -23,12 +21,9 @@ return (
 
         {/* <Carrusel/> */}
    </Div2>
-
-          
+       
 </Div>
 )
-
-
 }
 
 export default Cripto
@@ -39,8 +34,6 @@ background-size:100%;
 position:absolute;
 bottom:0;
 top:0;
-/* left:0;
-right:0;  */
 display:grid;
 grid-template-columns: repeat(2, 1fr);
 z-index:-3;  
@@ -99,10 +92,10 @@ const Video = styled.video `
    width:750px ;
    @media screen and (max-width:1100px){
    height:400px ;
-   width:650px ;
+   width:650px ;}
    @media screen and (max-width:715px){
    height:300px ;
-   width:550px ;
+   width:550px ;}
    @media screen and (max-width:590px){
    height:250px ;
    width:350px ;

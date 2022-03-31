@@ -49,23 +49,6 @@ return (
 
 export default Navbar
 
-// const Li = styled.li`
-//     color:white;
-//     /* text-align:center; */
-//     font-size:25px;
-//     /* background-color:black; */
-//     list-style:none;
-//     display:flex;
-//     /* align-items:center;
-//     flex-direction:row;
-//     justify-content:center; */
-
-//     @media screen and (max-width:860px){
-//     font-size:15px;
-//     text-align:left;
-// }
-//     `
-
 const Div = styled.div`
     background-color: #101010;
     height: 70px;
@@ -83,31 +66,21 @@ const Span = styled.span`
     margin-right:5px;
     }
     
-    /* color:white; */
     `
 const Div3 = styled.div`
-   
-        display:flex; 
-        /* justify-content:flex-end; */
-        margin-left:63%;
-        
-
-    
-        /* @media screen and (max-width:860px){
-        margin-left:500px;
-        @media screen and (max-width:660px){
-        margin-left:350px;
-} */
-        @media screen and (max-width:480px){
-        margin-left:0px;
-        display:flex;
+    display:flex; 
+    margin-left:63%;
+ 
+    @media screen and (max-width:480px){
+    margin-left:0px;
+    display:flex;
         }
     `
 const Img = styled.img`
-        margin-top:-7px;
-        padding:0px;
-        height:40px; 
-        width:auto;
+    margin-top:-7px;
+    padding:0px;
+    height:40px; 
+    width:auto;
     `
 
 const Button = styled.button `

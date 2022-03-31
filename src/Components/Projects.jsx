@@ -14,12 +14,7 @@ import detalles from '../assets/detalles.png'
 function Projects() {
   return (
     <Div>
-    {/* <Div1>
-    <h1>Proyectos: </h1>
-    </Div1>
-    <Div2></Div2> */}
-    
-      <Div2>
+        <Div2>
         <h2> Turn On App</h2>
         <p>
           <FormattedMessage id="projects.turnon" defaultMessage="Desarrollo de una SPA (Single Page Application) y APP mobile para la reserva de turnos de canchas deportivas" />
@@ -93,11 +88,7 @@ const Div = styled.div `
   background-size:100%;
   position:absolute;
   top:0;
-  /* bottom:0;
-  left:0;
-  right:0;  */
   display:grid;
-  
   grid-template-columns: repeat(2, 1fr);
   z-index:-3;  
   color:white;
@@ -107,19 +98,16 @@ const Div = styled.div `
   padding-left:20px;
 
   @media screen and (max-width:1200px){
-    grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(1, 1fr);
     
   }
 
 `
 
 const Div2= styled.div `
-  /* justify-items: center; */
   height:450px;
   display:grid;
   justify-items:center;
-
-
 
   h2 {
     margin-top: 140px;
@@ -142,18 +130,14 @@ const Div2= styled.div `
     
 }
   }
-
-
-
 `
+
 const Div3= styled.div `
   justify-items: center;
   margin-top: 50px;
-
 `
 
 const Boton = styled.button `
-    
     padding: 0px;
     margin-top:20px;
     background-color: transparent;
@@ -204,20 +188,15 @@ const Button4 = styled(Boton) `
 }
 `
 const Img1 = styled.img`
-height: 320px;
-width:auto;
-margin-right:-10px;
+  height: 320px;
+  width:auto;
+  margin-right:-10px;
 
 @media screen and (max-width:1200px){
-margin-top:-200px;
-height: auto;
-width:350px;
-
-/* margin-left:20px;
-margin-right:20px; */
-
-}
-  
+  margin-top:-200px;
+  height: auto;
+  width:350px;
+}  
 `
 const Img2 = styled.img `
   width:40px;

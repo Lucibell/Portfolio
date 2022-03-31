@@ -67,9 +67,6 @@ const Div = styled.div `
   background-size:cover;
   position:absolute;
   top:0;
-  /* bottom:0;
-  left:0;
-  right:0; */
   z-index:-10; 
   padding-right:10px;
  

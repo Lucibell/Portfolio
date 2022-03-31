@@ -37,8 +37,6 @@ const Div = styled.div`
    position:absolute;
    bottom:0;
    top:0;
-   /* left:0;
-   right:0;  */
    display:grid;
    grid-template-columns: repeat(2, 1fr);
    z-index:-3;  
@@ -95,10 +93,10 @@ const Video = styled.video `
    width:750px ;
    @media screen and (max-width:1100px){
    height:400px ;
-   width:650px ;
+   width:650px ;}
    @media screen and (max-width:715px){
    height:300px ;
-   width:550px ;
+   width:550px ;}
    @media screen and (max-width:590px){
    height:250px ;
    width:350px ;

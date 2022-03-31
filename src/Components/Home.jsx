@@ -79,25 +79,9 @@ video {
     top:0;
     right:0;
     left:0;
-    /* height:100vh; */
     z-index:-1;
   } 
-   /* color:white;
-   justify-items: center;
-   align-items: center;
-   color:white;
-   font-family:"Montserrat", cursive; */
-  
-
-
 `
-
-/* @media screen and (max-width:1024px){
-  
-  width:100%;
-  height:100%;
-} */
-  
 
 
 const DivContenido = styled.div `
@@ -124,30 +108,30 @@ font-size:80px;
 `
 
 const H4 = styled.h4`
-color: white;
-margin-left:0px;
+  color: white;
+  margin-left:0px;
 `
 const Boton = styled.button `
-    font-family:"Montserrat", cursive;
-    margin-top:20px;
-    font-weight:bold;
-    font-size:30px;
-    padding: 10px;
-    background-color: transparent;
-    width:auto;
-    border-radius:10px;
-    color:#E2E2EC;
-    position:absolute;
-    left:28%;
-    top:70%;
-    opacity:0.85;
-    transition:background-color .3s ease;
+   font-family:"Montserrat", cursive;
+   margin-top:20px;
+   font-weight:bold;
+   font-size:30px;
+   padding: 10px;
+   background-color: transparent;
+   width:auto;
+   border-radius:10px;
+   color:#E2E2EC;
+   position:absolute;
+   left:28%;
+   top:70%;
+   opacity:0.85;
+   transition:background-color .3s ease;
   
-    &:hover {
-    background-color: #2C2FF0;
-    }
+  &:hover {
+   background-color: #2C2FF0;
+   }
 
-    @media screen and (max-width:860px){
+   @media screen and (max-width:860px){
     top:65%;
 }
 `
@@ -158,9 +142,7 @@ const Div1 = styled.div `
   text-align:left;
   list-style:none;
   overflow:hidden;
-  /* display:flex; */
   box-sizing:content-box;
-  /* background-color:white; */
   height:70px;
   width:700px;
 
@@ -168,12 +150,10 @@ const Div1 = styled.div `
 
 const Span = styled.span `
   display:block;
-  /* line-height:40px; */
   height:100%;
   margin:0;
   color:#2C2FF0;
   font-weight:bold; 
-/* color:#6365E7; */
   text-align:left;
   margin-left:90px;
   font-size:55px;
@@ -192,8 +172,7 @@ const Span = styled.span `
     margin-left:-60px;
     margin-top:30px;
     color:#1F81E4;
-    /* color:#1284F7; */
-
+    
     @keyframes spin_words {
       30%   {transform: translateY(-170%);}  
       40%  {transform: translateY(-150%);} 
@@ -201,8 +180,6 @@ const Span = styled.span `
       80%  {transform: translateY(-320%);}
       100% {transform: translateY(-470%);}
 }
-
-
 
 }
 `

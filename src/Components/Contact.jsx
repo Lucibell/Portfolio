@@ -119,11 +119,10 @@ export default function Contact() {
 
 }
 
-const Div = styled.div `
+const Div = styled.div`
    background-image: url(${fondo});
    background-size:100%;
    position:absolute;
-   /* bottom:0; */
    top:0;
    left:0;
    right:0; 
@@ -133,16 +132,16 @@ const Div = styled.div `
    color:white;
    font-family:"Montserrat", cursive;
    display:flex;
-   /* margin-top:20px; */
+   
    @media screen and (max-width:840px){
      display:grid;
      grid-template-columns: repeat(1, 1fr);
-     padding-bottom:100%;
-      
-      } 
-    
+     padding-bottom:70%;
+     padding-left:10px;
+    } 
   `
-  const Div2 = styled.div `
+
+const Div2 = styled.div`
     margin-top: 60px;
     width: 50%;
     background-position: "center";
@@ -152,22 +151,20 @@ const Div = styled.div `
 
   `
 
-  const Label = styled.label `
-  display:flex;
-  margin-top:10px;
-  
-  /* padding:5px; */
-   
-  `
+const Label = styled.label`
+    display:flex;
+    margin-top:10px;
+ `
 
-  const Img= styled.img `
+const Img = styled.img`
     height:70px;
     margin-bottom:20px;
+    
     @media screen and (max-width:840px){
-      margin-right:10px;
+    margin-right:10px;}
     
   `
-  const Div1 = styled.div `
+const Div1 = styled.div `
     margin-top:125px;
     display: flex;
     flex-direction:column;
@@ -177,5 +174,5 @@ const Div = styled.div `
     display:flex;
     flex-direction:row;
     margin-top:-20px;
-    margin-right: 0px;
+    margin-right: 0px;}
   `

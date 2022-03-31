@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-// import Carrusel from '../Carrusel'
 import turnonvideo from '../../assets/turnon/turnonvideo.mp4'
 import fondo from '../../assets/fondis2.jpg'
 import { FormattedMessage } from 'react-intl'
@@ -39,8 +38,6 @@ const Div = styled.div `
         position:absolute;
         bottom:0;
         top:0;
-        /* left:0;
-        right:0;  */
         display:grid;
         grid-template-columns: repeat(2, 1fr);
         z-index:-3;  
@@ -83,36 +80,28 @@ const Div = styled.div `
 
     const Div1 = styled.div `
         margin-right: 40px;
-        /* @media screen and (max-width:1100px){
-            margin-top: 50px;} */
-
+       
     `
 
     const Div2 = styled.div `
         margin-right: 40px;
         margin-top:40px;
-   
-        /* @media screen and (max-width:1310px){
-            margin-top: -10px;}
-        @media screen and (max-width:590px){
-            margin-left:15px;
-        } */
-        `
+           `
+ 
     const Video = styled.video `
-     height:500px ;
-     width:750px ;
-     @media screen and (max-width:1100px){
-     height:400px ;
-     width:650px ;
-     @media screen and (max-width:715px){
-     height:300px ;
-     width:550px ;
-     @media screen and (max-width:590px){
-     height:auto ;
-     width:350px ;
-     margin-left:15px;
+        height:500px ;
+        width:750px ;
+        @media screen and (max-width:1100px){
+        height:400px ;
+        width:650px ;}
+        @media screen and (max-width:715px){
+        height:300px ;
+        width:550px ;}
+        @media screen and (max-width:590px){
+        height:auto ;
+        width:350px ;
+        margin-left:15px;
  }
-
 
  `
 
